@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:student_management_starter/features/auth/presentation/view/register_view.dart';
+import 'package:student_management_starter/features/auth/presentation/viewmodel/login_view_model.dart';
 
 class LoginView extends ConsumerStatefulWidget {
   const LoginView({super.key});
@@ -101,9 +102,10 @@ class _LoginViewState extends ConsumerState<LoginView> {
                     ElevatedButton(
                       key: const ValueKey('registerButton'),
                       onPressed: () {
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const RegisterView(),
-                        ));
+                        ref
+                            .read(loginViewModelProvider.notifier)
+                            .openRegisterView();
+                        super.initState();
                       },
                       child: const SizedBox(
                         height: 50,
