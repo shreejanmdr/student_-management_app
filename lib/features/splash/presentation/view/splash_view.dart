@@ -22,11 +22,9 @@ class _SplashViewState extends ConsumerState<SplashView> {
 
     ref.read(splashViewModelProvider.notifier).openLoginView();
     super.initState();
-
   }
 
-
-  
+  //
 
   @override
   Widget build(BuildContext context) {
