@@ -21,3 +21,8 @@ class BatchLocalDatasource {
     required this.batchHiveModel,
   });
 }
+
+
+//Add Batch
+// Future<Failure,bool> addBatch(BatchHiveModel batch) async {
+
