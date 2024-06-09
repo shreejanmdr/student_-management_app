@@ -98,6 +98,29 @@ class _LoginViewState extends ConsumerState<LoginView> {
                         ),
                       ),
                     ),
+
+                    // ElevatedButton(
+                    //   key: const ValueKey('loginButton'),
+                    //   onPressed: () {
+                    //     ref
+                    //         .read(loginViewModelProvider.notifier)
+                    //         .openBatchView();
+                    //     super.initState();
+                    //   },
+                    //     child: const SizedBox(
+                    //     height: 50,
+                    //     child: Center(
+                    //       child: Text(
+                    //         'Login',
+                    //         style: TextStyle(
+                    //           fontSize: 18,
+                    //           fontFamily: 'Brand Bold',
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
+
                     const SizedBox(height: 8),
                     ElevatedButton(
                       key: const ValueKey('registerButton'),

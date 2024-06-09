@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:student_management_starter/app/navigator_key/navigator_key.dart';
 import 'package:student_management_starter/app/themes/app_theme.dart';
+import 'package:student_management_starter/features/batch/presentation/view/batch_view.dart';
 import 'package:student_management_starter/features/splash/presentation/view/splash_view.dart';
 
 class App extends ConsumerWidget {
@@ -14,7 +15,7 @@ class App extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       title: 'Student Management',
       theme: AppTheme.getApplicationTheme(false),
-      home: const SplashView(),
+      home: const BatchView(),
     );
   }
 }
